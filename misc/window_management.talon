@@ -1,6 +1,6 @@
 window (new|open): app.window_open()
-window next: app.window_next()
-window last: app.window_previous()
+(window next|gibby): app.window_next()
+(window last|shibby): app.window_previous()
 window close: app.window_close()
 focus <user.running_applications>: user.switcher_focus(running_applications)
 running list: user.switcher_toggle_running()
@@ -14,3 +14,5 @@ snap <user.running_applications> <user.window_snap_position>:
     user.snap_app(running_applications, window_snap_position)
 snap <user.running_applications> [screen] <number>:
     user.move_app_to_screen(running_applications, number)
+
+swick: key("cmd-tab")

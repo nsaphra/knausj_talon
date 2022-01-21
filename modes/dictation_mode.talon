@@ -6,10 +6,13 @@ mode: dictation
 <user.prose>: auto_insert(prose)
 new line: "\n"
 new paragraph: "\n\n"
-cap <user.word>:
+(cap|champ) = <user.word>:
     result = user.formatted_text(word, "CAPITALIZE_FIRST_WORD")
     auto_insert(result)
-    
+
+comma: ","
+coma: ","
+
 # Navigation
 go up <number_small> (line|lines):
     edit.up()
@@ -69,7 +72,9 @@ select that: user.select_last_phrase()
 spell that <user.letters>: auto_insert(letters)
 spell that <user.formatters> <user.letters>:
     result = user.formatted_text(letters, formatters)
-    user.dictation_insert_raw(result)
+    user.auto_format_pause()
+    auto_insert(result)
+    user.auto_format_resume()
 
 # Escape, type things that would otherwise be commands
 ^escape <user.text>$:

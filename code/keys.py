@@ -136,6 +136,7 @@ punctuation_words = {
     "back tick": "`",
     "grave": "`",
     "comma": ",",
+    "coma": ",",
     "period": ".",
     "semicolon": ";",
     "colon": ":",
@@ -247,4 +248,3 @@ class Actions:
     def get_alphabet() -> dict:
         """Provides the alphabet dictionary"""
         return alphabet
-

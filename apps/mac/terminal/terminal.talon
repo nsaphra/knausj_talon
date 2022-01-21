@@ -7,6 +7,8 @@ tag(): user.git
 tag(): user.kubectl
 tag(): user.tabs
 tag(): terminal
+tag(): user.anaconda
+tag(): user.code_operators
 
 action(user.file_manager_open_parent):
     insert("cd ..")
@@ -32,4 +34,3 @@ suspend:
 resume:
   insert("fg")
   key(enter)
-

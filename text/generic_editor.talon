@@ -10,22 +10,22 @@ go word left:
 go word right:
     edit.word_right()
 
-go left:
+go left|crimp:
     edit.left()
 
-go right:
+go right|chris:
     edit.right()
 
-go up:
+go up|jeep:
     edit.up()
 
-go down:
+go down|doom:
     edit.down()
 
-go line start:
+go line start|lecksy:
     edit.line_start()
 
-go line end:
+go line end|ricky:
     edit.line_end()
 
 go way left:

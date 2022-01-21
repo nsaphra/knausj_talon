@@ -48,6 +48,7 @@ _capitalize_defaults = [
 
 # Default words that need to be remapped.
 _word_map_defaults = {
+    "Jupiter": "jupyter",
     # E.g:
     # "cash": "cache",
     # This is the opposite ordering to words_to_replace.csv (the latter has the target word first)
@@ -73,8 +74,8 @@ _simple_vocab_default = ["nmap", "admin", "Cisco", "Citrix", "VPN", "DNS", "Mine
 # Defaults for different pronounciations of words that need to be added to
 # Talon's vocabulary.
 _default_vocabulary = {
-    "N map": "nmap",
     "under documented": "under-documented",
+    "pre-training": "pretraining",
 }
 _default_vocabulary.update({word: word for word in _simple_vocab_default})
 

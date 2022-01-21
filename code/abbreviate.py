@@ -175,6 +175,7 @@ ctx.lists["user.abbreviation"] = {
     "saskatchewan": "sk",
     "service pack": "sp",
     "session id": "sid",
+    "sequence": "seq",
     "shell": "sh",
     "shellcode": "sc",
     "source": "src",
