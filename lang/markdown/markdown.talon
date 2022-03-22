@@ -1,18 +1,14 @@
-mode: user.markdown
-mode: command
-and code.language: markdown
+tag: user.markdown
 -
-tag(): user.code_operators
-tag(): user.code_comment
-tag(): user.code_generic
+level one: "# "
+level two: "## "
+level three: "### "
+level four: "#### "
+level five: "##### "
+level six: "###### "
 
-inside verbatim block:
-    insert("```")
-    key(enter)
-    key(enter)
-    insert("```")
+{user.markdown_code_block_language} block:
+    "```{markdown_code_block_language}"
+    key(enter:2)
+    "```"
     key(up)
-
-inside verbatim:
-    insert("``")
-    key(left)
