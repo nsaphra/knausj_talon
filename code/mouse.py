@@ -183,11 +183,7 @@ class Actions:
 
     def mouse_scroll_down(amount: float = 1):
         """Scrolls down"""
-<<<<<<< HEAD
-        mouse_scroll(-setting_mouse_wheel_down_amount.get())()
-=======
         mouse_scroll(amount * setting_mouse_wheel_down_amount.get())()
->>>>>>> 47d94958e6a970df0149d1fdfade26897d42c22f
 
     def mouse_scroll_down_continuous():
         """Scrolls down continuously"""
